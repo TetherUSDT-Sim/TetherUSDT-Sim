@@ -1,0 +1,86 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+/**
+ * @title TetherUSDT-Sim
+ * @dev A simulated BEP20 token for academic research purposes on Binance Smart Chain (BSC).
+ * This contract is NOT affiliated with or endorsed by the official Tether (USDT) project.
+ */
+
+contract TetherUSDT_Sim {
+    string public constant name = "TetherUSDT-Sim";
+    string public constant symbol = "USDTs";
+    uint8 public constant decimals = 6;
+    uint256 private _totalSupply = 20000000000 * 10**6; // 20 میلیارد با 6 رقم اعشار
+
+    address public contractOwner;
+
+    mapping(address => uint256) private _balances;
+    mapping(address => mapping(address => uint256)) private _allowances;
+
+    event Transfer(address indexed from, address indexed to, uint256 value);
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+
+    modifier onlyOwner() {
+        require(msg.sender == contractOwner, "Only the owner can perform this action");
+        _;
+    }
+
+    constructor() {
+        contractOwner = msg.sender;
+        _balances[msg.sender] = _totalSupply;
+        emit Transfer(address(0), msg.sender, _totalSupply);
+    }
+
+    function totalSupply() external view returns (uint256) {
+        return _totalSupply;
+    }
+
+    function balanceOf(address account) external view returns (uint256) {
+        return _balances[account];
+    }
+
+    function transfer(address recipient, uint256 amount) external returns (bool) {
+        require(recipient != address(0), "Invalid recipient address");
+        require(_balances[msg.sender] >= amount, "Insufficient balance");
+
+        _balances[msg.sender] -= amount;
+        _balances[recipient] += amount;
+
+        emit Transfer(msg.sender, recipient, amount);
+        return true;
+    }
+
+    function approve(address spender, uint256 amount) external returns (bool) {
+        require(spender != address(0), "Invalid spender address");
+        _allowances[msg.sender][spender] = amount;
+
+        emit Approval(msg.sender, spender, amount);
+        return true;
+    }
+
+    function allowance(address owner, address spender) external view returns (uint256) {
+        return _allowances[owner][spender];
+    }
+
+    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool) {
+        require(sender != address(0), "Invalid sender address");
+        require(recipient != address(0), "Invalid recipient address");
+        require(_balances[sender] >= amount, "Insufficient balance");
+        require(_allowances[sender][msg.sender] >= amount, "Allowance exceeded");
+
+        _balances[sender] -= amount;
+        _balances[recipient] += amount;
+        _allowances[sender][msg.sender] -= amount;
+
+        emit Transfer(sender, recipient, amount);
+        return true;
+    }
+
+    /**
+     * @dev Simulated function to clearly indicate this contract is for research purposes only.
+     */
+    function isSimulated() external pure returns (bool) {
+        return true; // Confirms this is a simulated version for academic use.
+    }
+}

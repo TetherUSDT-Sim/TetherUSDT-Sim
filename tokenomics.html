@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tokenomics | TetherUSDT-Simulated</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">TetherUSDT-Simulated</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contract.html">Contract</a></li>
+          <li><a href="tokenomics.html" class="active">Tokenomics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <section class="page-banner">
+    <div class="container">
+      <h1>Tokenomics</h1>
+      <p>Overview of token distribution and supply details.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <canvas id="tokenChart" width="400" height="400"></canvas>
+  </section>
+
+  <section class="container">
+    <h2>Total Supply</h2>
+    <p>20,000,000,000 USDTs (Simulated)</p>
+    <ul>
+      <li>80% Reserved for Simulation & Research (University)</li>
+      <li>10% Development & Testing Tools</li>
+      <li>5% Community Education & Awareness</li>
+      <li>5% Reserve for Future Academic Collaborations</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 TetherUSDT-Simulated. All rights reserved.</p>
+      <p>Contact us: <a href="mailto:contact@tetherusdt-simulated.org">contact@tetherusdt-simulated.org</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const ctx = document.getElementById('tokenChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: [
+          'Simulation & Research',
+          'Development & Tools',
+          'Community Education',
+          'Future Academic Use'
+        ],
+        datasets: [{
+          data: [80, 10, 5, 5],
+          backgroundColor: [
+            '#4CAF50',
+            '#2196F3',
+            '#FFC107',
+            '#9C27B0'
+          ]
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

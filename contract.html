@@ -11,7 +11,6 @@
       font-family: 'Inter', sans-serif;
       background-color: #ffffff;
       color: #0f0f0f;
-      margin-top: 80px;
     }
     .navbar {
       background-color: #ffffff;
@@ -20,24 +19,20 @@
     .navbar-brand img {
       height: 40px;
     }
-    .section {
-      padding: 60px 20px;
+    .content {
+      padding: 100px 20px 60px;
     }
-    .section-title {
+    h1 {
       color: #25a77c;
       font-weight: 700;
-      margin-bottom: 30px;
-      text-align: center;
     }
-    .tokenomics-box {
-      background-color: #f0fdf9;
-      border: 1px solid #25a77c;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .tokenomics-box h5 {
-      color: #25a77c;
+    a.btn-main {
+      background-color: #25a77c;
+      color: #fff;
+      border-radius: 30px;
+      padding: 10px 25px;
+      font-weight: 600;
+      text-decoration: none;
     }
     footer {
       background-color: #0f0f0f;
@@ -66,55 +61,30 @@
         <li class="nav-item"><a class="nav-link" href="technology.html">Technology</a></li>
         <li class="nav-item"><a class="nav-link" href="whitepaper.html">Whitepaper</a></li>
         <li class="nav-item"><a class="nav-link" href="roadmap.html">Roadmap</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<section class="section">
-  <div class="container">
-    <h1 class="section-title">Smart Contract Overview</h1>
-    <p class="text-center mb-4">
-      The TetherUSDT-Simulated token is deployed on Binance Smart Chain (BSC) and follows the BEP-20 standard.
-      It is built for academic purposes and mirrors real-world stablecoin functionality.
-    </p>
-    <div class="text-center mb-5">
-      <a href="https://bscscan.com/token/0x6f5987f0c66ad0279109f431b04f4e3113b5a230" class="btn btn-success" target="_blank">View on BscScan</a>
-    </div>
+<section class="content container">
+  <h1>Smart Contract Details</h1>
+  <p>This project is deployed on the Binance Smart Chain (BSC) and simulates a fiat-backed stablecoin contract under the name <strong>TetherUSDT-Sim</strong> with the symbol <strong>USDTs</strong>.</p>
 
-    <h2 class="section-title">Tokenomics</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="tokenomics-box">
-          <h5>Token Name:</h5>
-          <p>TetherUSDT-Simulated</p>
-        </div>
-        <div class="tokenomics-box">
-          <h5>Symbol:</h5>
-          <p>USDTs</p>
-        </div>
-        <div class="tokenomics-box">
-          <h5>Total Supply:</h5>
-          <p>20,000,000,000 USDTs</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="tokenomics-box">
-          <h5>Decimals:</h5>
-          <p>6</p>
-        </div>
-        <div class="tokenomics-box">
-          <h5>Chain:</h5>
-          <p>Binance Smart Chain (BSC)</p>
-        </div>
-        <div class="tokenomics-box">
-          <h5>Contract Address:</h5>
-          <p style="font-size: 0.9rem;">0x6f5987f0c66ad0279109f431b04f4e3113b5a230</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <p><strong>Smart Contract Address:</strong><br>
+    <a href="https://bscscan.com/token/0x6f5987f0c66ad0279109f431b04f4e3113b5a230" target="_blank">
+      0x6f5987f0c66ad0279109f431b04f4e3113b5a230 (View on BscScan)
+    </a>
+  </p>
+
+  <p><strong>Token Supply:</strong> 20,000,000,000 USDTs</p>
+  <p><strong>Decimals:</strong> 6</p>
+  <p><strong>Ownership:</strong> Ownership is renounced for transparency.</p>
+
+  <a class="btn-main mt-3" href="https://bscscan.com/address/0x6f5987f0c66ad0279109f431b04f4e3113b5a230#code" target="_blank">View Verified Code</a>
 </section>
 
 <footer>

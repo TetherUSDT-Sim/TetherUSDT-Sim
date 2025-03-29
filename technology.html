@@ -11,7 +11,6 @@
       font-family: 'Inter', sans-serif;
       background-color: #ffffff;
       color: #0f0f0f;
-      margin-top: 80px;
     }
     .navbar {
       background-color: #ffffff;
@@ -20,19 +19,12 @@
     .navbar-brand img {
       height: 40px;
     }
-    .section {
-      padding: 60px 20px;
+    .content {
+      padding: 100px 20px 60px;
     }
-    .section-title {
+    h1 {
       color: #25a77c;
       font-weight: 700;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .section p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      margin-bottom: 20px;
     }
     footer {
       background-color: #0f0f0f;
@@ -61,31 +53,32 @@
         <li class="nav-item"><a class="nav-link active" href="technology.html">Technology</a></li>
         <li class="nav-item"><a class="nav-link" href="whitepaper.html">Whitepaper</a></li>
         <li class="nav-item"><a class="nav-link" href="roadmap.html">Roadmap</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<section class="section">
-  <div class="container">
-    <h1 class="section-title">Technology Behind TetherUSDT-Simulated</h1>
-    <p>
-      TetherUSDT-Simulated is built on the Binance Smart Chain (BSC), a high-performance blockchain designed for smart contract functionality and low-cost transactions.
-      By leveraging the BEP-20 token standard, the project ensures compatibility with a wide range of DeFi applications, wallets, and blockchain tools.
-    </p>
-    <p>
-      The smart contract is written in Solidity and compiled using a standard BEP-20 structure to simulate the behavior of a real stablecoin. 
-      While it does not hold any real collateral, it mirrors the mechanisms of USDT to allow for realistic testing, research, and academic analysis.
-    </p>
-    <p>
-      Developers and researchers can interact with the smart contract, verify transactions on BscScan, and use the token within supported wallets like MetaMask and Trust Wallet. 
-      The contract is verified and open-source, enabling transparency and further experimentation.
-    </p>
-    <p>
-      The simulation approach allows for safe testing environments without financial risk, making it ideal for blockchain education, university labs, and early-stage development.
-    </p>
-  </div>
+<section class="content container">
+  <h1>Technology Behind the Project</h1>
+  <p>
+    TetherUSDT-Simulated is built on the Binance Smart Chain (BSC) using the BEP-20 token standard. This allows for fast, low-cost transactions and seamless integration with major DeFi platforms and wallets.
+  </p>
+  <p>
+    The token is designed with simplicity and transparency in mind. It simulates real-world stablecoin features such as:
+    <ul>
+      <li>Fixed total supply (20 billion USDTs)</li>
+      <li>Decimals: 6</li>
+      <li>Ownership renounced for trust</li>
+      <li>Verified smart contract on BscScan</li>
+    </ul>
+  </p>
+  <p>
+    The codebase is open-source and available for public review to ensure transparency and allow developers to learn from the contract design.
+  </p>
 </section>
 
 <footer>

@@ -32,7 +32,7 @@ This project is designed for educational and research purposes to study token ec
 ## 🪙 Token Logo
 
 ![USDTs Logo](https://raw.githubusercontent.com/TetherUSDT-Sim/TetherUSDT-Sim/main/assets/token-logo/logo_512x512.png)  
-**Optimized for BscScan, Trust Wallet, and MetaMask**
+**Compatible with BscScan, Trust Wallet, MetaMask, and token listing platforms.**
 
 ---
 

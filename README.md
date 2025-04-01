@@ -5,6 +5,16 @@ This project is designed for educational and research purposes to study token ec
 
 ---
 
+## 🪙 Token Logo
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TetherUSDT-Sim/TetherUSDT-Sim/main/logo.png" alt="USDTs Logo" width="200"/>
+</p>
+
+**Compatible with BscScan, Trust Wallet, MetaMask, and token listing platforms.**
+
+---
+
 ## 🌐 Official Resources
 
 - **Website:** [tetherusdt-simulated.org](https://www.tetherusdt-simulated.org)
@@ -26,13 +36,6 @@ This project is designed for educational and research purposes to study token ec
 | **Total Supply**    | 20,000,000,000 USDTs                                                    |
 | **Decimals**        | 6                                                                       |
 | **Contract Address**| [0x6f5987f0c66ad0279109f431b04f4e3113b5a230](https://bscscan.com/token/0x6f5987f0c66ad0279109f431b04f4e3113b5a230) |
-
----
-
-## 🪙 Token Logo
-
-![USDTs Logo](https://raw.githubusercontent.com/TetherUSDT-Sim/TetherUSDT-Sim/main/assets/token-logo/logo_512x512.png)  
-**Compatible with BscScan, Trust Wallet, MetaMask, and token listing platforms.**
 
 ---
 
@@ -61,7 +64,7 @@ This project is designed for educational and research purposes to study token ec
 - [View Smart Contract](https://bscscan.com/token/0x6f5987f0c66ad0279109f431b04f4e3113b5a230)  
 - [Download Whitepaper PDF](https://github.com/TetherUSDT-Sim/TetherUSDT-Sim/blob/6a9cc25dbd95b7a2cf7f5c2449ec0799d7b2eb5d/TetherUSDT-Simulated_Whitepaper.pdf)  
 - [MIT License](https://github.com/TetherUSDT-Sim/TetherUSDT-Sim/blob/main/LICENSE)  
-- [Token Logo](https://raw.githubusercontent.com/TetherUSDT-Sim/TetherUSDT-Sim/main/assets/token-logo/logo_512x512.png)
+- [Token Logo](https://raw.githubusercontent.com/TetherUSDT-Sim/TetherUSDT-Sim/main/logo.png)
 
 ---
 

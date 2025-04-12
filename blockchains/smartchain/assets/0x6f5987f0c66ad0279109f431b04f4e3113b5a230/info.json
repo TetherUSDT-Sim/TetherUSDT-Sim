@@ -7,11 +7,5 @@
   "website": "https://www.tetherusdt-simulated.org",
   "explorer": "https://bscscan.com/token/0x6f5987f0c66ad0279109f431b04f4e3113b5a230",
   "status": "active",
-  "id": "0x6f5987f0c66ad0279109f431b04f4e3113b5a230",
-  "links": {
-    "github": "https://github.com/TetherUSDT-Sim/TetherUSDT-Sim",
-    "whitepaper": "https://github.com/TetherUSDT-Sim/TetherUSDT-Sim/blob/main/TetherUSDT-Simulated_Whitepaper.pdf",
-    "email": "contact@tetherusdt-simulated.org"
-  },
-  "logo": "https://github.com/TetherUSDT-Sim/TetherUSDT-Sim/blob/main/assets/0x6f5987f0c66ad0279109f431b04f4e3113b5a230/logo.png"
+  "id": "0x6f5987f0c66ad0279109f431b04f4e3113b5a230"
 }
